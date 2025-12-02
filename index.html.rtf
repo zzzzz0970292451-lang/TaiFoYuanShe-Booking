@@ -1,0 +1,727 @@
+{\rtf1\ansi\ansicpg950\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red109\green109\blue109;\red236\green241\blue247;\red251\green0\blue7;
+\red0\green0\blue0;\red42\green42\blue42;\red107\green0\blue1;\red0\green0\blue255;\red77\green80\blue85;
+\red24\green112\blue43;\red9\green60\blue148;\red19\green118\blue70;\red111\green14\blue195;\red14\green110\blue109;
+\red164\green69\blue11;\red191\green28\blue37;}
+{\*\expandedcolortbl;;\cssrgb\c50196\c50196\c50196;\cssrgb\c94118\c95686\c97647;\cssrgb\c100000\c0\c0;
+\cssrgb\c0\c0\c0;\cssrgb\c21961\c21961\c21961;\cssrgb\c50196\c0\c0;\cssrgb\c0\c0\c100000;\cssrgb\c37255\c38824\c40784;
+\cssrgb\c9412\c50196\c21961;\cssrgb\c1569\c31765\c64706;\cssrgb\c3529\c52549\c34510;\cssrgb\c51765\c18824\c80784;\cssrgb\c0\c50196\c50196;
+\cssrgb\c70980\c34902\c3137;\cssrgb\c80392\c19216\c19216;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 html\cf0 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf8 \strokec8 "zh-TW"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf8 \strokec8 "UTF-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf8 \strokec8 "viewport"\cf0 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf8 \strokec8 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \strokec5 \uc0\u27888 \u20315 \u32227 \u33293  - \u25163 \u27231 \u38928 \u32004 \cf6 \strokec6 </\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 script\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 style\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 /* \uc0\u35373 \u32622 \u20840 \u22495 \u23383 \u39636 \u28858  Inter\u65292 \u20006 \u21152 \u20837 \u20013 \u25991 \u20633 \u29992 \u23383 \u39636  */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 body\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 font-family:\cf0 \strokec5  \cf10 \strokec10 'Inter'\cf0 \strokec5 , \cf11 \strokec11 sans-serif\cf0 \strokec5 , \cf10 \strokec10 'Microsoft JhengHei'\cf0 \strokec5 , \cf10 \strokec10 'PingFang TC'\cf0 \strokec5 , \cf10 \strokec10 'Apple LiGothic Medium'\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 -webkit-overflow-scrolling:\cf0 \strokec5  \cf11 \strokec11 touch\cf0 \strokec5 ; \cf9 \strokec9 /* iOS smooth scrolling */\cf0 \cb1 \strokec5 \
+\cb3         \}\cb1 \
+\cb3         \cf9 \strokec9 /* \uc0\u38577 \u34255 \u38928 \u35373 \u28414 \u21205 \u26781 \u65292 \u20445 \u25345  App \u20171 \u38754 \u25972 \u28500  */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 ::-webkit-scrollbar\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf11 \strokec11 none\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 .app-container\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 min-height:\cf0 \strokec5  \cf12 \strokec12 100vh\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf11 \strokec11 flex\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 flex-direction:\cf0 \strokec5  \cf11 \strokec11 column\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 padding-bottom:\cf0 \strokec5  \cf12 \strokec12 70px\cf0 \strokec5 ; \cf9 \strokec9 /* \uc0\u30906 \u20445 \u20839 \u23481 \u19981 \u26371 \u34987 \u24213 \u37096 \u23566 \u35261 \u21015 \u36974 \u25803  */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf11 \strokec11 #F8F7F3\cf0 \strokec5 ; \cf9 \strokec9 /* \uc0\u29141 \u40613 \u33394 \u32972 \u26223  */\cf0 \cb1 \strokec5 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 .nav-item\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 transition:\cf0 \strokec5  \cf11 \strokec11 color\cf0 \strokec5  \cf12 \strokec12 0.2s\cf0 \strokec5 , \cf11 \strokec11 transform\cf0 \strokec5  \cf12 \strokec12 0.1s\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 .nav-item.active\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 color:\cf0 \strokec5  \cf11 \strokec11 #D4B483\cf0 \strokec5 ; \cf9 \strokec9 /* \uc0\u22902 \u33590 \u26837  */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 transform:\cf0 \strokec5  \cf11 \strokec11 translateY(\cf12 \strokec12 -2px\cf11 \strokec11 )\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf9 \strokec9 /* Modal Styles */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .modal\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf11 \strokec11 fixed\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 top:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 100%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 100%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf11 \strokec11 rgba(\cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0.7\cf11 \strokec11 )\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf11 \strokec11 flex\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 justify-content:\cf0 \strokec5  \cf11 \strokec11 center\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 align-items:\cf0 \strokec5  \cf11 \strokec11 center\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 z-index:\cf0 \strokec5  \cf12 \strokec12 1000\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 visibility:\cf0 \strokec5  \cf11 \strokec11 hidden\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 transition:\cf0 \strokec5  \cf11 \strokec11 opacity\cf0 \strokec5  \cf12 \strokec12 0.3s\cf0 \strokec5  \cf11 \strokec11 ease\cf0 \strokec5 , \cf11 \strokec11 visibility\cf0 \strokec5  \cf12 \strokec12 0.3s\cf0 \strokec5  \cf11 \strokec11 ease\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 .modal.active\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 1\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 visibility:\cf0 \strokec5  \cf11 \strokec11 visible\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 .modal-content\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf11 \strokec11 #F8F7F3\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 1rem\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 max-width:\cf0 \strokec5  \cf12 \strokec12 90%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 max-height:\cf0 \strokec5  \cf12 \strokec12 90%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 overflow-y:\cf0 \strokec5  \cf11 \strokec11 auto\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf11 \strokec11 relative\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 animation:\cf0 \strokec5  \cf11 \strokec11 slideIn\cf0 \strokec5  \cf12 \strokec12 0.3s\cf0 \strokec5  \cf11 \strokec11 ease-out\cf0 \strokec5  \cf11 \strokec11 forwards\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 padding:\cf0 \strokec5  \cf12 \strokec12 1.5rem\cf0 \strokec5 ; \cf9 \strokec9 /* Increased padding */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 box-shadow:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 10px\cf0 \strokec5  \cf12 \strokec12 25px\cf0 \strokec5  \cf11 \strokec11 rgba(\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0.2\cf11 \strokec11 )\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf13 \strokec13 @keyframes\cf0 \strokec5  \cf11 \strokec11 slideIn\cf0 \strokec5  \{\cb1 \
+\cb3             \cf11 \strokec11 from\cf0 \strokec5  \{ \cf4 \strokec4 transform:\cf0 \strokec5  \cf11 \strokec11 translateY(\cf12 \strokec12 50px\cf11 \strokec11 )\cf0 \strokec5 ; \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ; \}\cb1 \
+\cb3             \cf11 \strokec11 to\cf0 \strokec5  \{ \cf4 \strokec4 transform:\cf0 \strokec5  \cf11 \strokec11 translateY(\cf12 \strokec12 0\cf11 \strokec11 )\cf0 \strokec5 ; \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 1\cf0 \strokec5 ; \}\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 .modal-image\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 100%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf11 \strokec11 auto\cf0 \strokec5 ; \cf9 \strokec9 /* Auto height to fit content */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 max-height:\cf0 \strokec5  \cf12 \strokec12 40vh\cf0 \strokec5 ; \cf9 \strokec9 /* Limit max height for better mobile viewing */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 object-fit:\cf0 \strokec5  \cf11 \strokec11 contain\cf0 \strokec5 ; \cf9 \strokec9 /* Show the entire image */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 0.75rem\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 margin-bottom:\cf0 \strokec5  \cf12 \strokec12 1rem\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 box-shadow:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 4px\cf0 \strokec5  \cf12 \strokec12 10px\cf0 \strokec5  \cf11 \strokec11 rgba(\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0.1\cf11 \strokec11 )\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf11 \strokec11 #ffffff\cf0 \strokec5 ; \cf9 \strokec9 /* Ensure background is white for contain mode */\cf0 \cb1 \strokec5 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 .detail-description\cf0 \strokec5  \cf7 \strokec7 p\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 margin-bottom:\cf0 \strokec5  \cf12 \strokec12 0.5rem\cf0 \strokec5 ; \cf9 \strokec9 /* Spacing for paragraphs in detailed description */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 line-height:\cf0 \strokec5  \cf12 \strokec12 1.6\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf9 \strokec9 /* Loading Spinner */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .spinner\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 4px\cf0 \strokec5  \cf11 \strokec11 solid\cf0 \strokec5  \cf11 \strokec11 #f3f3f3\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 border-top:\cf0 \strokec5  \cf12 \strokec12 4px\cf0 \strokec5  \cf11 \strokec11 solid\cf0 \strokec5  \cf11 \strokec11 #D4B483\cf0 \strokec5 ; \cf9 \strokec9 /* Milk Tea color */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 50%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 30px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 30px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 animation:\cf0 \strokec5  \cf11 \strokec11 spin\cf0 \strokec5  \cf12 \strokec12 1s\cf0 \strokec5  \cf11 \strokec11 linear\cf0 \strokec5  \cf11 \strokec11 infinite\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf13 \strokec13 @keyframes\cf0 \strokec5  \cf11 \strokec11 spin\cf0 \strokec5  \{\cb1 \
+\cb3             \cf12 \strokec12 0%\cf0 \strokec5  \{ \cf4 \strokec4 transform:\cf0 \strokec5  \cf11 \strokec11 rotate(\cf12 \strokec12 0deg\cf11 \strokec11 )\cf0 \strokec5 ; \}\cb1 \
+\cb3             \cf12 \strokec12 100%\cf0 \strokec5  \{ \cf4 \strokec4 transform:\cf0 \strokec5  \cf11 \strokec11 rotate(\cf12 \strokec12 360deg\cf11 \strokec11 )\cf0 \strokec5 ; \}\cb1 \
+\cb3         \}\cb1 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 style\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         tailwind.config = \{\cb1 \
+\cb3             theme: \{\cb1 \
+\cb3                 extend: \{\cb1 \
+\cb3                     colors: \{\cb1 \
+\cb3                         \cf10 \strokec10 'oatmeal'\cf0 \strokec5 : \cf10 \strokec10 '#F8F7F3'\cf0 \strokec5 , \cf9 \strokec9 /* \uc0\u29141 \u40613 \u33394  */\cf0 \cb1 \strokec5 \
+\cb3                         \cf10 \strokec10 'milk-tea'\cf0 \strokec5 : \cf10 \strokec10 '#D4B483'\cf0 \strokec5 , \cf9 \strokec9 /* \uc0\u22902 \u33590 \u26837  */\cf0 \cb1 \strokec5 \
+\cb3                         \cf10 \strokec10 'deep-brown'\cf0 \strokec5 : \cf10 \strokec10 '#4A4440'\cf0 \strokec5 ,\cb1 \
+\cb3                         \cf10 \strokec10 'light-pink'\cf0 \strokec5 : \cf10 \strokec10 '#FFEFD5'\cf0 \strokec5 , \cf9 \strokec9 /* \uc0\u26580 \u21644 \u31881  */\cf0 \cb1 \strokec5 \
+\cb3                     \}\cb1 \
+\cb3                 \}\cb1 \
+\cb3             \}\cb1 \
+\cb3         \}\cb1 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 body\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-oatmeal text-deep-brown"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "app-container"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "app-container max-w-xl mx-auto shadow-xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf9 \strokec9 <!-- Header -->\cf6 \strokec6 <\cf7 \strokec7 header\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "p-6 bg-white shadow-md rounded-b-xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 h1\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-3xl font-bold text-center text-milk-tea"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u27888 \u20315 \u32227 \u33293 \cf6 \strokec6 </\cf7 \strokec7 h1\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-center text-sm mt-1 text-gray-500"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u38728 \u24615 \u35566 \u35426 \u33287 \u27888 \u20315 \u27861 \u20107 \u38928 \u32004 \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 header\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf9 \strokec9 <!-- Main Content Area -->\cf6 \strokec6 <\cf7 \strokec7 main\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-grow p-4 overflow-y-auto"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf9 \strokec9 <!-- \uc0\u20729 \u30446 \u34920  Page -->\cf6 \strokec6 <\cf7 \strokec7 section\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "pricelist"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "page"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-2xl font-semibold mb-4 border-b pb-2 border-milk-tea"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u22612 \u32645 \u33287 \u27861 \u20107 \u26381 \u21209 \u20729 \u30446 \u34920 \cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf9 \strokec9 <!-- Category Filters -->\cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex space-x-2 overflow-x-auto whitespace-nowrap mb-6 p-1"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "category-btn bg-milk-tea text-white px-4 py-2 rounded-full text-sm shadow-md transition-all duration-200"\cf0 \strokec5  \cf4 \strokec4 data-category\cf6 \strokec6 =\cf8 \strokec8 "tarot"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u22612 \u32645 \u26381 \u21209 \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "category-btn bg-white text-deep-brown border border-milk-tea px-4 py-2 rounded-full text-sm shadow-sm hover:bg-light-pink transition-all duration-200"\cf0 \strokec5  \cf4 \strokec4 data-category\cf6 \strokec6 =\cf8 \strokec8 "ritual"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u27861 \u20107 /\u22871 \u35037 \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "category-btn bg-white text-deep-brown border border-milk-tea px-4 py-2 rounded-full text-sm shadow-sm hover:bg-light-pink transition-all duration-200"\cf0 \strokec5  \cf4 \strokec4 data-category\cf6 \strokec6 =\cf8 \strokec8 "discount"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u20778 \u24800 \u36039 \u35338 \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf9 \strokec9 <!-- Pricelist Cards Container -->\cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "service-list"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "space-y-4 mb-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 <!-- Cards will be populated here by JS -->\cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf9 \strokec9 <!-- Gemini LLM Feature: Service Selection Assistant -->\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white p-5 rounded-xl shadow-lg border-2 border-milk-tea"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xl font-bold text-milk-tea mb-3 flex items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mr-2"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u10024  \u26381 \u21209 \u36984 \u25799 \u36628 \u21161 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm text-gray-600 mb-4"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u36664 \u20837 \u24744 \u30446 \u21069 \u30340 \u22256 \u24785 \u65292 \u35731 \u25105 \u20497 \u30340 \u38728 \u24615 \u21161 \u29702 \u28858 \u24744 \u25512 \u34214 \u26368 \u36969 \u21512 \u30340 \u26381 \u21209 \u21644 \u34847 \u29165 \u12290 \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cb1 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 textarea\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "assistant-input"\cf0 \strokec5  \cf4 \strokec4 rows\cf6 \strokec6 =\cf8 \strokec8 "3"\cf0 \strokec5  \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf8 \strokec8 "\uc0\u20363 \u22914 \u65306 \u25105 \u30340 \u20107 \u26989 \u36935 \u21040 \u29942 \u38968 \u65292 \u19981 \u30693 \u36947 \u35442 \u19981 \u35442 \u25563 \u24037 \u20316 ..."\cf0 \strokec5  \cb1 \
+\cb3                         \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full p-3 border border-light-pink rounded-lg focus:outline-none focus:ring-2 focus:ring-milk-tea text-sm"\cf6 \strokec6 ></\cf7 \strokec7 textarea\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cb1 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "assistant-button"\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "handleAssistantClick()"\cf0 \strokec5  \cb1 \
+\cb3                         \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full mt-3 bg-deep-brown text-white py-2 rounded-lg font-semibold hover:bg-milk-tea transition-colors flex items-center justify-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "button-text"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u21462 \u24471 \u25351 \u24341  \u10024 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "assistant-loading"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "spinner hidden ml-2"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "assistant-output"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-4 p-4 bg-oatmeal rounded-lg border border-light-pink hidden"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "font-semibold text-milk-tea mb-2"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u38728 \u24615 \u21161 \u29702 \u24314 \u35696 \u65306 \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "assistant-result"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-gray-700 whitespace-pre-wrap"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 section\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf9 \strokec9 <!-- \uc0\u38928 \u32004  Page -->\cf6 \strokec6 <\cf7 \strokec7 section\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "booking"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "page hidden"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-2xl font-semibold mb-6 border-b pb-2 border-milk-tea"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u38928 \u32004 \u33287 \u32879 \u32097 \u36039 \u35338 \cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "space-y-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 <!-- Booking Time -->\cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "p-5 bg-white rounded-xl shadow-lg border border-light-pink"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg font-bold text-milk-tea mb-2"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u38928 \u32004 \u38283 \u25918 \u26178 \u38291 \cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center text-xl font-mono text-deep-brown"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-6 h-6 mr-3 text-milk-tea"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             22:00 - 23:30 (\uc0\u35531 \u25552 \u26089 \u38928 \u32004 )\cb1 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                     \cf9 \strokec9 <!-- Contact Details -->\cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "p-5 bg-white rounded-xl shadow-lg border border-light-pink"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg font-bold text-milk-tea mb-4"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u32879 \u32097 \u25105 \u20497 \cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cb1 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center justify-between p-3 border-b last:border-b-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-6 h-6 mr-3 text-milk-tea"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "font-medium"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u38651 \u35441 \u38928 \u32004 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "phone-link"\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "tel:+886912345678"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-milk-tea font-semibold hover:text-deep-brown transition-colors"\cf6 \strokec6 >\cf0 \strokec5 +886 912 345 678\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cb1 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center justify-between p-3 border-b last:border-b-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-6 h-6 mr-3 text-milk-tea"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "font-medium"\cf6 \strokec6 >\cf0 \strokec5 LINE ID\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "line-link"\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "https://line.me/ti/p/~@959ukjbb"\cf0 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf8 \strokec8 "_blank"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-milk-tea font-semibold hover:text-deep-brown transition-colors"\cf6 \strokec6 >\cf0 \strokec5 @959ukjbb\cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "p-3"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 h4\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "font-medium mb-2 flex items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-6 h-6 mr-3 text-milk-tea"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M15 11a3 3 0 11-6 0 3 3 0 016 0z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \uc0\u38928 \u32004 \u22320 \u22336  (\u38656 \u20808 \u38928 \u32004 )\cb1 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 h4\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex justify-between items-center bg-oatmeal p-3 rounded-lg border"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "address-text"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm"\cf6 \strokec6 >\cf0 \strokec5 XX\uc0\u24066 XX\u21312 XX\u36335 XX\u34399  (\u35443 \u32048 \u22320 \u22336 \u38928 \u32004 \u24460 \u21578 \u30693 )\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "copyAddress()"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-shrink-0 ml-4 bg-milk-tea text-white text-xs px-3 py-1 rounded-full hover:bg-deep-brown transition-colors shadow-md"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                     \uc0\u35079 \u35069 \cb1 \
+\cb3                                 \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                     \cf9 \strokec9 <!-- Bank Info for Transfer -->\cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "p-5 bg-white rounded-xl shadow-lg border border-light-pink"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg font-bold text-milk-tea mb-2"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u21295 \u27454 \u36039 \u35338  (\u38928 \u32004 \u30906 \u35469 \u24460 \u20351 \u29992 )\cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-oatmeal p-3 rounded-lg border"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u37504 \u34892 \u20195 \u34399 : (822)\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm font-mono"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u24115 \u34399 : 230540287386\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs text-gray-500 mt-2"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u35531 \u21247 \u36978 \u21040 \u65292 \u25552 \u26089 \u38928 \u32004 \u65292 \u35613 \u35613 \u65281 \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 section\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf9 \strokec9 <!-- \uc0\u38364 \u26044  Page -->\cf6 \strokec6 <\cf7 \strokec7 section\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "about"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "page hidden"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-2xl font-semibold mb-6 border-b pb-2 border-milk-tea"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u38364 \u26044 \u27888 \u20315 \u32227 \u33293 \cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white p-6 rounded-xl shadow-lg border border-light-pink space-y-6"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "inline-block p-3 rounded-full bg-milk-tea text-white"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-8 h-8"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2zM9 17a10.038 10.038 0 016 0M10.5 4.5l1.5-1.5 1.5 1.5"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xl font-bold mt-3 text-milk-tea"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u21697 \u29260 \u32227 \u36215 \cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cb1 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-gray-700 leading-relaxed indent-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \uc0\u27888 \u20315 \u32227 \u33293 \u21109 \u31435 \u30340 \u21021 \u34935 \u65292 \u28304 \u26044 \u23565 \u27888 \u22283 \u20315 \u27861 \u33287 \u21476 \u32769 \u22612 \u32645 \u26234 \u24935 \u30340 \u28145 \u28145 \u25964 \u30031 \u33287 \u29105 \u24859 \u12290 \u25105 \u20497 \u30456 \u20449 \u65292 \u27599 \u20491 \u20154 \u37117 \u33021 \u22312 \u29983 \u21629 \u26053 \u36884 \u20013 \u25214 \u21040 \u23660 \u26044 \u33258 \u24049 \u30340 \u24179 \u38748 \u33287 \u26041 \u21521 \u12290 \u22312 \u36889 \u20491 \u24555 \u36895 \u35722 \u21205 \u30340 \u19990 \u30028 \u20013 \u65292 \u25105 \u20497 \u33268 \u21147 \u26044 \u25552 \u20379 \u19968 \u34389 \u24515 \u38728 \u30340 \u28207 \u28771 \u65292 \u20197 \u28331 \u21644 \u12289 \u23560 \u26989 \u30340 \u24907 \u24230 \u65292 \u38506 \u20276 \u24744 \u25506 \u32034 \u20839 \u22312 \u12289 \u35299 \u31572 \u22256 \u24785 \u12290 \cb1 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "border-t border-light-pink pt-4 space-y-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-milk-tea mr-3 mt-1 flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-5 h-5"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm text-gray-600"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 **\uc0\u38728 \u24615 \u25351 \u24341 \u65306 ** \u34701 \u21512 \u22612 \u32645 \u29260 \u30340 \u35299 \u35712 \u33287 \u27888 \u22283 \u20315 \u27861 \u30340 \u21746 \u29702 \u65292 \u25552 \u20379 \u29544 \u29305 \u19988 \u23526 \u29992 \u30340 \u29983 \u21629 \u24314 \u35696 \u12290 \cb1 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-milk-tea mr-3 mt-1 flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-5 h-5"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm text-gray-600"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                                 **\uc0\u30274 \u30290 \u27675 \u22285 \u65306 ** \u25105 \u20497 \u33268 \u21147 \u26044 \u25171 \u36896 \u19968 \u20491 \u23433 \u20840 \u12289 \u23527 \u38748 \u30340 \u31354 \u38291 \u65292 \u35731 \u24744 \u22312 \u35566 \u35426 \u36942 \u31243 \u20013 \u24863 \u21040 \u23436 \u20840 \u25918 \u39686 \u33287 \u34987 \u25903 \u25345 \u12290 \cb1 \
+\cb3                             \cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 section\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 main\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf9 \strokec9 <!-- Fixed Bottom Navigation Bar -->\cf6 \strokec6 <\cf7 \strokec7 nav\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "nav"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fixed bottom-0 left-0 right-0 w-full max-w-xl mx-auto bg-white border-t border-light-pink shadow-2xl p-2 z-10 rounded-t-xl"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex justify-around items-center h-14"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#"\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "showPage('pricelist', event)"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "nav-item flex flex-col items-center text-xs text-gray-500 active"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 <!-- Icon: Pricelist -->\cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-6 h-6"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \strokec5 \uc0\u20729 \u30446 \u34920 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#"\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "showPage('booking', event)"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "nav-item flex flex-col items-center text-xs text-gray-500"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 <!-- Icon: Booking -->\cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-6 h-6"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M8 7V3m8 4V3m-9 8h.01M17 11h.01M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \strokec5 \uc0\u38928 \u32004 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 a\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "#"\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "showPage('about', event)"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "nav-item flex flex-col items-center text-xs text-gray-500"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 <!-- Icon: About -->\cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-6 h-6"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \strokec5 \uc0\u38364 \u26044 \cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 a\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 nav\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf9 \strokec9 <!-- Service Detail Modal -->\cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "service-modal"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "modal"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "modal-content w-full"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "closeModal()"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "absolute top-4 right-4 text-deep-brown hover:text-milk-tea transition-colors z-10"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 svg\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-8 h-8"\cf0 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf8 \strokec8 "none"\cf0 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf8 \strokec8 "currentColor"\cf0 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf8 \strokec8 "0 0 24 24"\cf0 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf8 \strokec8 "http://www.w3.org/2000/svg"\cf6 \strokec6 ><\cf7 \strokec7 path\cf0 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf8 \strokec8 "round"\cf0 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf8 \strokec8 "2"\cf0 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf8 \strokec8 "M6 18L18 6M6 6l12 12"\cf6 \strokec6 ></\cf7 \strokec7 path\cf6 \strokec6 ></\cf7 \strokec7 svg\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 img\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "modal-image"\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 ""\cf0 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf8 \strokec8 "Service Image"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "modal-image"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "modal-name"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-2xl font-bold text-milk-tea mb-2"\cf6 \strokec6 ></\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "modal-price"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xl font-extrabold text-deep-brown mb-4"\cf6 \strokec6 ></\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "modal-detail"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "detail-description text-gray-700 text-base leading-relaxed"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "closeModal()"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-6 w-full bg-milk-tea text-white py-3 rounded-xl font-semibold text-lg hover:bg-deep-brown transition-colors"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \uc0\u36820 \u22238 \cb1 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 // --- Gemini API Configuration ---\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  \cf14 \strokec14 API_KEY\cf0 \strokec5  = \cf10 \strokec10 ""\cf0 \strokec5 ; \cf9 \strokec9 // Canvas will provide this key at runtime\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  \cf14 \strokec14 MODEL_NAME\cf0 \strokec5  = \cf10 \strokec10 "gemini-2.5-flash-preview-09-2025"\cf0 \strokec5 ;\cb1 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  \cf14 \strokec14 API_URL\cf0 \strokec5  = \cf10 \strokec10 `https://generativelanguage.googleapis.com/v1beta/models/\cf0 \strokec5 $\{\cf14 \strokec14 MODEL_NAME\cf0 \strokec5 \}\cf10 \strokec10 :generateContent?key=\cf0 \strokec5 $\{\cf14 \strokec14 API_KEY\cf0 \strokec5 \}\cf10 \strokec10 `\cf0 \strokec5 ;\cb1 \
+\cb3         \cb1 \
+\cb3         \cf9 \strokec9 // --- Data Structure for Services ---\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  services = [\cb1 \
+\cb3             \cf9 \strokec9 // \uc0\u22612 \u32645 \u26381 \u21209  (Tarot)\cf0 \cb1 \strokec5 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-A'\cf0 \strokec5 , code: \cf10 \strokec10 'A.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u26326 \u26151 \u30332 \u23637 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u38728 \u39746 \u26230 /\u26410 \u20358 \u30332 \u23637 '\cf0 \strokec5 , price: \cf15 \strokec15 666\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+Love'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u37341 \u23565 \u19981 \u26126 \u26391 \u30340 \u24863 \u24773 \u38364 \u20418 \u65292 \u36879 \u36942 \u22612 \u32645 \u29260 \u28145 \u20837 \u35299 \u26512 \u38617 \u26041 \u30340 \u24515 \u24847 \u12289 \u28507 \u22312 \u30332 \u23637 \u33287 \u21487 \u33021 \u36935 \u21040 \u30340 \u25361 \u25136 \u12290 \u24171 \u21161 \u24744 \u37328 \u28165 \u26326 \u26151 \u24773 \u24875 \u65292 \u25235 \u20303 \u30332 \u23637 \u24859 \u24773 \u30340 \u26368 \u20339 \u26178 \u27231 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-B'\cf0 \strokec5 , code: \cf10 \strokec10 'B.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u35079 \u21512 \u27193 \u33865 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u24444 \u27492 \u24863 \u24773 /\u35079 \u21512 /\u23035 \u32227 '\cf0 \strokec5 , price: \cf15 \strokec15 666\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+Reunion'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u35299 \u26512 \u24744 \u33287 \u21069 \u20219 \u25110 \u29305 \u23450 \u23565 \u35937 \u30340 \u24863 \u24773 \u36899 \u32080 \u65292 \u25506 \u35342 \u35079 \u21512 \u30340 \u21487 \u33021 \u24615 \u33287 \u38459 \u31001 \u12290 \u36879 \u36942 \u25351 \u24341 \u65292 \u23416 \u32722 \u22914 \u20309 \u20462 \u24489 \u38364 \u20418 \u25110 \u25918 \u19979 \u19981 \u36969 \u21512 \u30340 \u36899 \u32080 \u65292 \u35731 \u24859 \u37325 \u26032 \u27969 \u21205 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-C'\cf0 \strokec5 , code: \cf10 \strokec10 'C.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u24859 \u24773 \u35443 \u32048 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u24444 \u27492 \u24863 \u24773 /\u23035 \u32227 /\u26410 \u20358 /\u38728 \u39746 '\cf0 \strokec5 , price: \cf15 \strokec15 888\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+DeepLove'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u37341 \u23565 \u24744 \u30446 \u21069 \u30340 \u24859 \u24773 \u29376 \u24907 \u36914 \u34892 \u20840 \u38754 \u24615 \u35299 \u26512 \u65292 \u21253 \u21547 \u38617 \u26041 \u24863 \u24773 \u22522 \u30990 \u12289 \u26410 \u20358 \u30332 \u23637 \u12289 \u28507 \u22312 \u20276 \u20406 \u29305 \u36074 \u12289 \u20197 \u21450 \u22914 \u20309 \u25552 \u21319 \u33258 \u36523 \u21560 \u24341 \u21147 \u65292 \u21161 \u24744 \u36208 \u21521 \u24184 \u31119 \u23035 \u32227 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-D'\cf0 \strokec5 , code: \cf10 \strokec10 'D.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u24859 \u24773 \u31777 \u30053 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u24444 \u27492 \u24863 \u24773 /\u26410 \u20358 \u30332 \u23637 '\cf0 \strokec5 , price: \cf15 \strokec15 688\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+LoveSimple'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u37341 \u23565 \u21934 \u19968 \u24859 \u24773 \u21839 \u38988 \u25552 \u20379 \u24555 \u36895 \u32780 \u31934 \u30906 \u30340 \u22612 \u32645 \u29260 \u25351 \u24341 \u12290 \u36969 \u21512 \u24076 \u26395 \u24555 \u36895 \u29554 \u24471 \u26041 \u21521 \u65292 \u23565 \u30070 \u21069 \u24863 \u24773 \u21839 \u38988 \u26377 \u26126 \u30906 \u30097 \u21839 \u30340 \u24744 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-E'\cf0 \strokec5 , code: \cf10 \strokec10 'E.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u26691 \u33457 \u21629 \u36939 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '3\uc0\u20491 \u26376 \u20839 \u26691 \u33457 \u36939 '\cf0 \strokec5 , price: \cf15 \strokec15 388\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+Peach'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u38928 \u28204 \u26410 \u20358 \u19977 \u20491 \u26376 \u24744 \u30340 \u26691 \u33457 \u36939 \u21218 \u36208 \u21521 \u65292 \u20998 \u26512 \u36935 \u21040 \u26032 \u23565 \u35937 \u30340 \u27231 \u26371 \u33287 \u39006 \u22411 \u65292 \u20197 \u21450 \u22914 \u20309 \u25552 \u21319 \u33258 \u36523 \u39749 \u21147 \u65292 \u21560 \u24341 \u27491 \u32227 \u30340 \u21040 \u20358 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-F'\cf0 \strokec5 , code: \cf10 \strokec10 'F.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u22818 \u22659 \u21839 \u38988 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u22818 \u35041 \u30340 \u20844 \u24287 /\u23470 \u24287 /\u25110 \u20854 \u20182 '\cf0 \strokec5 , price: \cf15 \strokec15 388\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+Dream'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u35299 \u26512 \u24744 \u30340 \u22818 \u22659 \u25152 \u20659 \u36948 \u30340 \u28507 \u24847 \u35672 \u35338 \u24687 \u65292 \u29305 \u21029 \u26159 \u33287 \u20844 \u24287 \u12289 \u23470 \u24287 \u25110 \u31070 \u38728 \u30456 \u38364 \u30340 \u22818 \u22659 \u12290 \u36879 \u36942 \u22612 \u32645 \u29260 \u35299 \u35712 \u22818 \u22659 \u65292 \u29702 \u35299 \u20854 \u23565 \u29694 \u23526 \u29983 \u27963 \u30340 \u21855 \u31034 \u33287 \u25351 \u24341 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-G'\cf0 \strokec5 , code: \cf10 \strokec10 'G.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u24037 \u20316 \u36939 \u21218 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '3\uc0\u20491 \u26376 \u20839 \u24037 \u20316 \u36939 \u21218 '\cf0 \strokec5 , price: \cf15 \strokec15 388\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+Career'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u20998 \u26512 \u24744 \u26410 \u20358 \u19977 \u20491 \u26376 \u30340 \u24037 \u20316 \u36939 \u21218 \u65292 \u21253 \u21547 \u32887 \u22580 \u20154 \u38555 \u12289 \u21319 \u36983 \u27231 \u26371 \u12289 \u38917 \u30446 \u36914 \u23637 \u31561 \u12290 \u25552 \u20379 \u23526 \u38555 \u24314 \u35696 \u65292 \u24171 \u21161 \u24744 \u22312 \u20107 \u26989 \u19978 \u20570 \u20986 \u26368 \u20339 \u27770 \u31574 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-H'\cf0 \strokec5 , code: \cf10 \strokec10 'H.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u20107 \u26989 \u35722 \u21270 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u24819 \u21109 \u26989 /\u25563 \u36305 \u36947 '\cf0 \strokec5 , price: \cf15 \strokec15 588\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+Business'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u37341 \u23565 \u21109 \u26989 \u35215 \u21123 \u25110 \u36681 \u32887 \u36984 \u25799 \u65292 \u36879 \u36942 \u22612 \u32645 \u29260 \u20998 \u26512 \u20854 \u21487 \u34892 \u24615 \u12289 \u28507 \u22312 \u39080 \u38570 \u33287 \u25104 \u21151 \u27231 \u26371 \u12290 \u28858 \u24744 \u25552 \u20379 \u26126 \u30906 \u30340 \u26041 \u21521 \u33287 \u34892 \u21205 \u31574 \u30053 \u65292 \u38477 \u20302 \u27770 \u31574 \u30340 \u19981 \u30906 \u23450 \u24615 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-M'\cf0 \strokec5 , code: \cf10 \strokec10 'M.'\cf0 \strokec5 , name: \cf10 \strokec10 '2\uc0\u25799 \u19968 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u20219 \u20309 \u22823 \u23567 \u30340 \u25225 \u25799 '\cf0 \strokec5 , price: \cf15 \strokec15 688\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+Choice'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u30070 \u24744 \u38754 \u33256 \u37325 \u35201 \u36984 \u25799 \u26178 \u65292 \u22612 \u32645 \u29260 \u23559 \u28858 \u24744 \u20998 \u26512 \u20841 \u20491 \u36984 \u38917 \u21508 \u33258 \u30340 \u20778 \u32570 \u40670 \u12289 \u21487 \u33021 \u24118 \u20358 \u30340 \u32080 \u26524 \u65292 \u20197 \u21450 \u21738 \u19968 \u20491 \u26356 \u31526 \u21512 \u24744 \u30340 \u38263 \u36960 \u30446 \u27161 \u33287 \u20839 \u24515 \u38656 \u27714 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-N'\cf0 \strokec5 , code: \cf10 \strokec10 'N.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u36939 \u21218 \u30332 \u23637 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '3\uc0\u20491 \u26376 \u20839 \u25972 \u39636 \u36939 \u21218 \u30332 \u23637 '\cf0 \strokec5 , price: \cf15 \strokec15 388\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+Fortune'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u32156 \u21512 \u20998 \u26512 \u24744 \u26410 \u20358 \u19977 \u20491 \u26376 \u30340 \u25972 \u39636 \u36939 \u21218 \u65292 \u21253 \u25324 \u24859 \u24773 \u12289 \u20107 \u26989 \u12289 \u36001 \u23500 \u21644 \u20581 \u24247 \u31561 \u21508 \u26041 \u38754 \u12290 \u25552 \u20379 \u38928 \u35686 \u33287 \u24314 \u35696 \u65292 \u24171 \u21161 \u24744 \u36264 \u21513 \u36991 \u20982 \u65292 \u25484 \u25569 \u22909 \u36939 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-O'\cf0 \strokec5 , code: \cf10 \strokec10 'O.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u20845 \u20491 \u21839 \u38988 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u26377 \u30097 \u21839 \u24819 \u20570 \u35426 \u21839 '\cf0 \strokec5 , price: \cf15 \strokec15 600\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+Questions'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u24744 \u21487 \u20197 \u28310 \u20633 \u20845 \u20491 \u24744 \u26368 \u38364 \u24515 \u30340 \u21839 \u38988 \u65292 \u22612 \u32645 \u29260 \u23559 \u37341 \u23565 \u27599 \u20491 \u21839 \u38988 \u25552 \u20379 \u31934 \u28310 \u30340 \u35299 \u31572 \u33287 \u28145 \u20837 \u30340 \u25351 \u24341 \u65292 \u24171 \u21161 \u24744 \u20840 \u38754 \u24615 \u35299 \u27770 \u22256 \u24785 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'tarot-P'\cf0 \strokec5 , code: \cf10 \strokec10 'P.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u35264 \u38899 \u25351 \u31034 \u21345 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u19981 \u35299 \u31844 \u65292 \u23622 \u26178 \u20315 \u31062 \u26371 \u25351 \u31034 \u20320 '\cf0 \strokec5 , price: \cf15 \strokec15 200\cf0 \strokec5 , category: \cf10 \strokec10 'tarot'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/D4B483/ffffff?text=Tarot+Guanyin'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u36879 \u36942 \u35264 \u38899 \u25351 \u31034 \u21345 \u65292 \u30001 \u20315 \u31062 \u30452 \u25509 \u32102 \u20104 \u24744 \u30070 \u21069 \u21839 \u38988 \u30340 \u21855 \u31034 \u33287 \u25351 \u24341 \u65292 \u19981 \u38656 \u35079 \u38620 \u35299 \u35712 \u65292 \u30452 \u25351 \u26680 \u24515 \u12290 \u25552 \u20379 \u24515 \u38728 \u19978 \u30340 \u24944 \u34249 \u33287 \u26041 \u21521 \u12290 '\cf0 \strokec5  \},\cb1 \
+\
+\cb3             \cf9 \strokec9 // \uc0\u27861 \u20107 /\u22871 \u35037  (Ritual/Other)\cf0 \cb1 \strokec5 \
+\cb3             \{ id: \cf10 \strokec10 'ritual-R'\cf0 \strokec5 , code: \cf10 \strokec10 'R.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u36996 \u20061 \u20661 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u32066 \u26997 \u28165 \u31639 /\u36996 \u20661 \u36681 \u36939 \u27861 \u20107 '\cf0 \strokec5 , price: \cf15 \strokec15 499\cf0 \strokec5 , category: \cf10 \strokec10 'ritual'\cf0 \strokec5 , \cb1 \
+\cb3               \cf9 \strokec9 // *** \uc0\u24050 \u26367 \u25563 \u28858 \u20351 \u29992 \u32773 \u25552 \u20379 \u30340 \u26368 \u26032 \u21487 \u30452 \u25509 \u36617 \u20837 \u22294 \u29255 \u32178 \u22336  ***\cf0 \cb1 \strokec5 \
+\cb3               image_url: \cf10 \strokec10 'https://i.meee.com.tw/EXyrHeC.jpg'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 `\uc0\u12300 \u36996 \u20061 \u20661 \u12301 \u27861 \u20107 \u26088 \u22312 \u28165 \u38500 \u32047 \u19990 \u21450 \u20170 \u29983 \u25152 \u31309 \u32047 \u30340 \u20061 \u31278 \u26989 \u20661 \u65292 \u21253 \u21547 \u65306 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <p class="font-semibold mt-2 mb-1">\uc0\u20061 \u20661 \u26680 \u24515  (\u28165 \u31639 \u24115 \u21934 )\u65306 </p>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <ul class="list-disc list-inside space-y-1 ml-4 text-gray-600">\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u21463 \u29983 \u20661  (\u27424 \u36001 \u24235 )</li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u20900 \u35242 \u29238 \u27597 \u20661  (\u27424 \u35242 \u24773 )</li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u21151 \u24503 \u20661  (\u27424 \u31070 \u26126 )</li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u27969 \u29986 \u32974 \u20818 \u20661  (\u27424 \u23344 \u38728 )</li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u27578 \u29983 \u21507 \u29983 \u20661  (\u27424 \u29983 \u21629 )</li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u38525 \u38291 \u32618 \u26989 \u20661  (\u27424 \u22240 \u26524 )</li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u20154 \u30382 \u20661  (\u27424 \u25237 \u32974 )</li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u21475 \u33292 \u20661  (\u27424 \u35328 \u35486 )</li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u38512 \u38291 \u24863 \u24773 \u20661  (\u27424 \u32227 \u32227 )</li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </ul>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <p class="font-semibold mt-4 mb-1">\uc0\u25955 \u21673 \u22022 \u27861 \u34847  (\u23526 \u36074 \u20767 \u36996 )\u65306 </p>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <ul class="list-disc list-inside space-y-1 ml-4 text-gray-600">\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u30001 \u21476 \u24052 \u38597 \u24107 \u20613 \u35242 \u36896 \u65292 \u21151 \u25928 \u36852 \u21521 \u20900 \u35242 \u20661 \u20027 \u12289 \u23344 \u38728 \u20808 \u20154 \u12290 </li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <li>\uc0\u35494 \u32147 \u20498 \u27700 \u21270 \u35299 \u65292 \u26989 \u38556 \u27969 \u36208 \u65292 \u31119 \u22577 \u30041 \u19979 \u12290 </li>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </ul>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <p class="mt-4">\uc0\u27492 \u27861 \u20107 \u33021 \u24171 \u21161 \u24744 \u28165 \u31639 \u20006 \u20767 \u36996 \u22240 \u26524 \u26989 \u20661 \u65292 \u36681 \u21270 \u20302 \u36855 \u36939 \u21218 \u65292 \u35731 \u36001 \u36939 \u12289 \u20154 \u32227 \u12289 \u20581 \u24247 \u31561 \u21508 \u26041 \u38754 \u36814 \u20358 \u20840 \u26032 \u38283 \u22987 \u65292 \u38283 \u21855 \u23436 \u32654 \u38281 \u29872 \u65281 </p>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 `\cf0 \strokec5 \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'ritual-I'\cf0 \strokec5 , code: \cf10 \strokec10 'I.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u20107 \u26989 \u37329 \u23383 \u22612 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u20107 \u26989 /\u20559 \u36001 \u36939 /\u38728 \u39746 '\cf0 \strokec5 , price: \cf15 \strokec15 588\cf0 \strokec5 , category: \cf10 \strokec10 'ritual'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/4A4440/ffffff?text=Ritual+Career'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u36879 \u36942 \u29544 \u29305 \u30340 \u27861 \u20107 \u20736 \u24335 \u65292 \u24375 \u21270 \u24744 \u30340 \u20107 \u26989 \u22522 \u30990 \u65292 \u21560 \u24341 \u26356 \u22810 \u20559 \u36001 \u36939 \u12290 \u21516 \u26178 \u28136 \u21270 \u38728 \u39746 \u65292 \u25552 \u21319 \u20491 \u20154 \u33021 \u37327 \u65292 \u21161 \u24744 \u22312 \u20107 \u26989 \u19978 \u27493 \u27493 \u39640 \u21319 \u65292 \u36001 \u28304 \u24291 \u36914 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'ritual-J'\cf0 \strokec5 , code: \cf10 \strokec10 'J.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u36001 \u21209 \u20358 \u28304 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u27714 \u36001 /\u20559 \u36001 /\u38728 \u39746 '\cf0 \strokec5 , price: \cf15 \strokec15 688\cf0 \strokec5 , category: \cf10 \strokec10 'ritual'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/4A4440/ffffff?text=Ritual+Wealth'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u23560 \u28858 \u36001 \u23500 \u21297 \u20047 \u25110 \u24076 \u26395 \u38283 \u25299 \u36001 \u28304 \u30340 \u24744 \u35373 \u35336 \u12290 \u27492 \u27861 \u20107 \u26088 \u22312 \u25171 \u36890 \u24744 \u30340 \u36001 \u36939 \u36890 \u36947 \u65292 \u21560 \u24341 \u27491 \u36001 \u33287 \u20559 \u36001 \u65292 \u20006 \u36879 \u36942 \u20315 \u27861 \u21147 \u37327 \u38799 \u22266 \u36001 \u24235 \u65292 \u23526 \u29694 \u36001 \u21209 \u33258 \u30001 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'ritual-K'\cf0 \strokec5 , code: \cf10 \strokec10 'K.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u20559 \u36001 \u21407 \u22240 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u36942 \u21435 /\u29694 \u22312 /\u26410 \u20358 '\cf0 \strokec5 , price: \cf15 \strokec15 688\cf0 \strokec5 , category: \cf10 \strokec10 'ritual'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/4A4440/ffffff?text=Ritual+Fortune'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u28145 \u24230 \u25506 \u35342 \u24433 \u38911 \u24744 \u20559 \u36001 \u36939 \u30340 \u22240 \u26524 \u26989 \u21147 \u65292 \u24478 \u36942 \u21435 \u12289 \u29694 \u22312 \u21040 \u26410 \u20358 \u19977 \u20491 \u32173 \u24230 \u36914 \u34892 \u28165 \u29702 \u33287 \u21152 \u25345 \u12290 \u27492 \u27861 \u20107 \u26377 \u21161 \u26044 \u31227 \u38500 \u36001 \u36939 \u36335 \u19978 \u30340 \u38556 \u31001 \u65292 \u35731 \u24847 \u22806 \u20043 \u36001 \u26356 \u23481 \u26131 \u38477 \u33256 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ id: \cf10 \strokec10 'ritual-L'\cf0 \strokec5 , code: \cf10 \strokec10 'L.'\cf0 \strokec5 , name: \cf10 \strokec10 '\uc0\u33067 \u38626 \u36007 \u22256 '\cf0 \strokec5 , short_detail: \cf10 \strokec10 '\uc0\u36942 \u21435 /\u29694 \u22312 /\u26410 \u20358 /\u20559 \u36001 /\u23035 \u32227 /\u38728 \u39746 '\cf0 \strokec5 , price: \cf15 \strokec15 888\cf0 \strokec5 , category: \cf10 \strokec10 'ritual'\cf0 \strokec5 , \cb1 \
+\cb3               image_url: \cf10 \strokec10 'https://via.placeholder.com/400x200/4A4440/ffffff?text=Ritual+Freedom'\cf0 \strokec5 , \cb1 \
+\cb3               long_detail: \cf10 \strokec10 '\uc0\u36889 \u26159 \u19968 \u38917 \u20840 \u38754 \u24615 \u30340 \u36681 \u36939 \u22871 \u35037 \u65292 \u26088 \u22312 \u24478 \u26681 \u26412 \u19978 \u25913 \u35722 \u24744 \u36007 \u22256 \u30340 \u21629 \u36939 \u36556 \u36321 \u12290 \u23427 \u28085 \u33995 \u20102 \u28165 \u29702 \u26989 \u38556 \u12289 \u22686 \u24375 \u36001 \u23500 \u12289 \u20462 \u24489 \u23035 \u32227 \u31561 \u22810 \u20491 \u26041 \u38754 \u65292 \u21161 \u24744 \u23526 \u29694 \u20840 \u26041 \u20301 \u30340 \u23500 \u36275 \u33287 \u24184 \u31119 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3         ];\cb1 \
+\cb3         \cb1 \
+\cb3         \cf9 \strokec9 // \uc0\u38728 \u24615 \u34847 \u29165 \u36984 \u38917 \u21015 \u34920  (\u20379  LLM \u21443 \u32771 )\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  candleOptions = [\cb1 \
+\cb3             \{ name: \cf10 \strokec10 '\uc0\u24859 \u24773 \u32005 \u34847 \u29165 '\cf0 \strokec5 , effect: \cf10 \strokec10 '\uc0\u25307 \u27491 \u26691 \u33457 \u12289 \u21644 \u21512 \u24863 \u24773 \u12289 \u20462 \u24489 \u38364 \u20418 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ name: \cf10 \strokec10 '\uc0\u36001 \u23500 \u40643 \u34847 \u29165 '\cf0 \strokec5 , effect: \cf10 \strokec10 '\uc0\u25307 \u27491 \u20559 \u36001 \u12289 \u32858 \u36001 \u12289 \u22686 \u21152 \u26989 \u21209 \u27231 \u26371 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ name: \cf10 \strokec10 '\uc0\u20107 \u26989 \u32160 \u34847 \u29165 '\cf0 \strokec5 , effect: \cf10 \strokec10 '\uc0\u21161 \u21319 \u36983 \u12289 \u32887 \u22580 \u36020 \u20154 \u12289 \u25475 \u38500 \u24037 \u20316 \u38556 \u31001 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ name: \cf10 \strokec10 '\uc0\u28136 \u21270 \u30333 \u34847 \u29165 '\cf0 \strokec5 , effect: \cf10 \strokec10 '\uc0\u28165 \u29702 \u36000 \u33021 \u37327 \u12289 \u21435 \u38500 \u26214 \u27683 \u12289 \u24515 \u38728 \u23433 \u23450 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ name: \cf10 \strokec10 '\uc0\u32156 \u21512 \u36681 \u36939 \u34847 \u29165 '\cf0 \strokec5 , effect: \cf10 \strokec10 '\uc0\u20840 \u26041 \u20301 \u25552 \u21319 \u36939 \u21218 \u12289 \u24179 \u34913 \u21508 \u26041 \u33021 \u37327 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ name: \cf10 \strokec10 '\uc0\u36996 \u39000 \u37329 \u34847 \u29165 '\cf0 \strokec5 , effect: \cf10 \strokec10 '\uc0\u29992 \u26044 \u36996 \u39000 \u31572 \u35613 \u65292 \u38799 \u22266 \u39000 \u21147 \u25104 \u26524 \u12290 '\cf0 \strokec5  \},\cb1 \
+\cb3         ];\cb1 \
+\
+\
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  discounts = [\cb1 \
+\cb3             \{ text: \cf10 \strokec10 '\uc0\u27599 \u26085 \u31532 \u19968 \u20301 \u38928 \u32004 \u32773  \u20139 \u26377 9\u25240 '\cf0 \strokec5 , icon: \cf10 \strokec10 '\uc0\u11088 '\cf0 \strokec5  \},\cb1 \
+\cb3             \{ text: \cf10 \strokec10 '\uc0\u38928 \u32004 \u22612 \u32645 \u29260 \u36092 \u36023 \u34847 \u29165  & \u27861 \u20107  \u20139 \u26377 9\u25240  (\u38480 \u26178 \u27861 \u26371  \u25918 \u29983  \u21151 \u24503 \u39006 \u19981 \u21015 \u20837 )'\cf0 \strokec5 , icon: \cf10 \strokec10 '\uc0\u55357 \u56687 \u65039 '\cf0 \strokec5  \}\cb1 \
+\cb3         ];\cb1 \
+\
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  serviceListContainer = document.getElementById(\cf10 \strokec10 'service-list'\cf0 \strokec5 );\cb1 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  categoryButtons = document.querySelectorAll(\cf10 \strokec10 '.category-btn'\cf0 \strokec5 );\cb1 \
+\
+\cb3         \cf9 \strokec9 // --- LLM Assistant Functions ---\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  assistantInput = document.getElementById(\cf10 \strokec10 'assistant-input'\cf0 \strokec5 );\cb1 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  assistantButton = document.getElementById(\cf10 \strokec10 'assistant-button'\cf0 \strokec5 );\cb1 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  assistantLoading = document.getElementById(\cf10 \strokec10 'assistant-loading'\cf0 \strokec5 );\cb1 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  assistantButtonText = document.getElementById(\cf10 \strokec10 'button-text'\cf0 \strokec5 );\cb1 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  assistantOutput = document.getElementById(\cf10 \strokec10 'assistant-output'\cf0 \strokec5 );\cb1 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  assistantResult = document.getElementById(\cf10 \strokec10 'assistant-result'\cf0 \strokec5 );\cb1 \
+\
+\cb3         \cf9 \strokec9 // \uc0\u26356 \u26032  System Prompt\u65292 \u21152 \u20837 \u34847 \u29165 \u36984 \u38917 \u21644 \u25512 \u34214 \u35201 \u27714 \cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 const\cf0 \strokec5  systemPrompt = \cf10 \strokec10 `\uc0\u20320 \u26159 \u19968 \u20301 \u27888 \u20315 \u32227 \u33293 \u30340 \u36039 \u28145 \u38728 \u24615 \u39015 \u21839 \u12290 \u20320 \u30340 \u30446 \u27161 \u26159 \u26681 \u25818 \u39015 \u23458 \u25552 \u20986 \u30340 \u12300 \u21839 \u38988 \u12301 \u25110 \u12300 \u22256 \u24785 \u12301 \u65292 \u24478 \u20197 \u19979 \u30340 \u26381 \u21209 \u28165 \u21934 \u20013 \u65292 \u25512 \u34214 \u19968 \u21040 \u20841 \u20491 \u26368 \u21512 \u36969 \u30340 \u26381 \u21209 \u65292 \u20006 **\u38989 \u22806 \u25512 \u34214 \u19968 \u21040 \u20841 \u27454 \u26368 \u36969 \u21512 \u25645 \u37197 \u30340 \u34847 \u29165 **\u65292 \u20197 \u28331 \u21644 \u12289 \u23560 \u26989 \u30340 \u35486 \u27683 \u36914 \u34892 \u35498 \u26126 \u12290 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         \uc0\u35531 \u26681 \u25818 \u39015 \u23458 \u30340 \u25552 \u21839 \u65292 \u20998 \u26512 \u20854 \u24773 \u22659 \u65292 \u20006 \u25512 \u34214 \u26368 \u30456 \u38364 \u30340 \u26381 \u21209 \u20195 \u30908 \u33287 \u21517 \u31281 \u65292 \u20197 \u21450 \u26368 \u31526 \u21512 \u38656 \u27714 \u30340 \u34847 \u29165 \u21517 \u31281 \u12290 \u24744 \u21482 \u33021 \u24478 \u28165 \u21934 \u20013 \u25512 \u34214 \u65292 \u19981 \u25033 \u30332 \u26126 \u26032 \u30340 \u26381 \u21209 \u25110 \u34847 \u29165 \u12290 \cf0 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10         \uc0\u21487 \u20379 \u25512 \u34214 \u30340 \u26381 \u21209 \u28165 \u21934  (\u20195 \u30908  | \u21517 \u31281  | \u31777 \u36848 )\u65306 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         \cf0 \strokec5 $\{services.map(s => \cf10 \strokec10 `\cf0 \strokec5 $\{s.code\}\cf10 \strokec10  | \cf0 \strokec5 $\{s.name\}\cf10 \strokec10  | \cf0 \strokec5 $\{s.short_detail\}\cf10 \strokec10 `\cf0 \strokec5 ).join(\cf10 \strokec10 '\\n'\cf0 \strokec5 )\}\cb1 \
+\
+\cf10 \cb3 \strokec10         \uc0\u21487 \u20379 \u25512 \u34214 \u30340 \u38728 \u24615 \u34847 \u29165 \u28165 \u21934  (\u21517 \u31281  | \u21151 \u25928 )\u65306 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         \cf0 \strokec5 $\{candleOptions.map(c => \cf10 \strokec10 `\cf0 \strokec5 $\{c.name\}\cf10 \strokec10  | \cf0 \strokec5 $\{c.effect\}\cf10 \strokec10 `\cf0 \strokec5 ).join(\cf10 \strokec10 '\\n'\cf0 \strokec5 )\}\cb1 \
+\
+\cf10 \cb3 \strokec10         \uc0\u22238 \u25033 \u26684 \u24335 \u35531 \u36981 \u23432 \u20197 \u19979 \u24190 \u40670 \u65306 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         1. \uc0\u20197 \u12300 \u35242 \u24859 \u30340 \u21892 \u20449 \u24744 \u22909 \u65306 \u12301 \u38283 \u38957 \u12290 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         2. \uc0\u31777 \u30701 \u32943 \u23450 \u39015 \u23458 \u30340 \u21839 \u38988 \u65292 \u20006 \u32102 \u20104 \u40723 \u21237 \u12290 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         3. \uc0\u26126 \u30906 \u25512 \u34214 **\u26381 \u21209 \u20195 \u30908 \u33287 \u21517 \u31281 **\u65292 \u20006 \u35299 \u37323 \u28858 \u20160 \u40636 \u36889 \u20491 \u26381 \u21209 \u36969 \u21512 \u20182 \u20497 \u12290 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         4. \uc0\u21478 \u22806 \u29544 \u31435 \u19968 \u27573 \u33853 \u26126 \u30906 \u25512 \u34214 **\u34847 \u29165 \u21517 \u31281 **\u65292 \u20006 \u35498 \u26126 \u34847 \u29165 \u30340 \u36628 \u21161 \u21151 \u25928 \u12290 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         5. \uc0\u32080 \u23614 \u40723 \u21237 \u20182 \u20497 \u36879 \u36942 \u12300 \u26597 \u30475 \u35443 \u24773 \u12301 \u20102 \u35299 \u26356 \u22810 \u12290 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         `\cf0 \strokec5 ;\cb1 \
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Calls the Gemini API to get a service recommendation.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{string\} query - The user's question or problem.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{number\} retryCount - Current retry attempt count.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 async\cf0 \strokec5  \cf13 \strokec13 function\cf0 \strokec5  callGeminiAssistant(query, retryCount = \cf15 \strokec15 0\cf0 \strokec5 ) \{\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  maxRetries = \cf15 \strokec15 3\cf0 \strokec5 ;\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  delay = \cf14 \strokec14 Math\cf0 \strokec5 .pow(\cf15 \strokec15 2\cf0 \strokec5 , retryCount) * \cf15 \strokec15 1000\cf0 \strokec5 ;\cb1 \
+\
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  payload = \{\cb1 \
+\cb3                 contents: [\{ parts: [\{ text: query \}] \}],\cb1 \
+\cb3                 systemInstruction: \{ parts: [\{ text: systemPrompt \}] \},\cb1 \
+\cb3             \};\cb1 \
+\
+\cb3             \cf13 \strokec13 try\cf0 \strokec5  \{\cb1 \
+\cb3                 \cf13 \strokec13 const\cf0 \strokec5  response = \cf13 \strokec13 await\cf0 \strokec5  fetch(\cf14 \strokec14 API_URL\cf0 \strokec5 , \{\cb1 \
+\cb3                     method: \cf10 \strokec10 'POST'\cf0 \strokec5 ,\cb1 \
+\cb3                     headers: \{ \cf10 \strokec10 'Content-Type'\cf0 \strokec5 : \cf10 \strokec10 'application/json'\cf0 \strokec5  \},\cb1 \
+\cb3                     body: \cf14 \strokec14 JSON\cf0 \strokec5 .stringify(payload)\cb1 \
+\cb3                 \});\cb1 \
+\
+\cb3                 \cf13 \strokec13 if\cf0 \strokec5  (!response.ok) \{\cb1 \
+\cb3                     \cf13 \strokec13 if\cf0 \strokec5  (retryCount < maxRetries) \{\cb1 \
+\cb3                         \cf13 \strokec13 await\cf0 \strokec5  \cf13 \strokec13 new\cf0 \strokec5  \cf14 \strokec14 Promise\cf0 \strokec5 (resolve => setTimeout(resolve, delay));\cb1 \
+\cb3                         \cf13 \strokec13 return\cf0 \strokec5  callGeminiAssistant(query, retryCount + \cf15 \strokec15 1\cf0 \strokec5 );\cb1 \
+\cb3                     \}\cb1 \
+\cb3                     \cf13 \strokec13 throw\cf0 \strokec5  \cf13 \strokec13 new\cf0 \strokec5  \cf14 \strokec14 Error\cf0 \strokec5 (\cf10 \strokec10 `API response status: \cf0 \strokec5 $\{response.status\}\cf10 \strokec10 `\cf0 \strokec5 );\cb1 \
+\cb3                 \}\cb1 \
+\
+\cb3                 \cf13 \strokec13 const\cf0 \strokec5  result = \cf13 \strokec13 await\cf0 \strokec5  response.json();\cb1 \
+\cb3                 \cf13 \strokec13 const\cf0 \strokec5  text = result.candidates?.[\cf15 \strokec15 0\cf0 \strokec5 ]?.content?.parts?.[\cf15 \strokec15 0\cf0 \strokec5 ]?.text || \cf10 \strokec10 "\uc0\u25265 \u27465 \u65292 \u38728 \u24615 \u21161 \u29702 \u30446 \u21069 \u28961 \u27861 \u28858 \u24744 \u25552 \u20379 \u25351 \u24341 \u12290 \u35531 \u31245 \u24460 \u20877 \u35430 \u25110 \u30452 \u25509 \u32879 \u32097 \u23458 \u26381 \u12290 "\cf0 \strokec5 ;\cb1 \
+\cb3                 \cf13 \strokec13 return\cf0 \strokec5  text;\cb1 \
+\
+\cb3             \} \cf13 \strokec13 catch\cf0 \strokec5  (error) \{\cb1 \
+\cb3                 console.error(\cf10 \strokec10 "Gemini API Error:"\cf0 \strokec5 , error);\cb1 \
+\cb3                 \cf13 \strokec13 return\cf0 \strokec5  \cf10 \strokec10 "\uc0\u25265 \u27465 \u65292 \u36899 \u32218 \u21040 \u38728 \u24615 \u19990 \u30028 \u30340 \u27211 \u27153 \u20284 \u20046 \u36935 \u21040 \u20102 \u19968 \u40670 \u38556 \u31001 \u12290 \u35531 \u31245 \u20505 \u20877 \u35430 \u12290 "\cf0 \strokec5 ;\cb1 \
+\cb3             \}\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Handles the click event for the Service Assistant button.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 async\cf0 \strokec5  \cf13 \strokec13 function\cf0 \strokec5  handleAssistantClick() \{\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  query = assistantInput.value.trim();\cb1 \
+\cb3             \cf13 \strokec13 if\cf0 \strokec5  (query.length < \cf15 \strokec15 5\cf0 \strokec5 ) \{\cb1 \
+\cb3                 showCustomMessage(\cf10 \strokec10 '\uc0\u35531 \u36664 \u20837 \u26356 \u20855 \u39636 \u30340 \u22256 \u24785 \u25110 \u21839 \u38988  (\u33267 \u23569 5\u20491 \u23383 )\u12290 '\cf0 \strokec5 , \cf10 \strokec10 'error'\cf0 \strokec5 );\cb1 \
+\cb3                 \cf13 \strokec13 return\cf0 \strokec5 ;\cb1 \
+\cb3             \}\cb1 \
+\
+\cb3             \cf9 \strokec9 // UI Loading State\cf0 \cb1 \strokec5 \
+\cb3             assistantButton.disabled = \cf13 \strokec13 true\cf0 \strokec5 ;\cb1 \
+\cb3             assistantButtonText.textContent = \cf10 \strokec10 '\uc0\u24605 \u32771 \u20013 ...'\cf0 \strokec5 ;\cb1 \
+\cb3             assistantLoading.classList.remove(\cf10 \strokec10 'hidden'\cf0 \strokec5 );\cb1 \
+\cb3             assistantOutput.classList.add(\cf10 \strokec10 'hidden'\cf0 \strokec5 );\cb1 \
+\cb3             assistantResult.textContent = \cf10 \strokec10 ''\cf0 \strokec5 ;\cb1 \
+\
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  recommendationText = \cf13 \strokec13 await\cf0 \strokec5  callGeminiAssistant(\cf10 \strokec10 `\uc0\u25105 \u30340 \u22256 \u24785 \u26159 \u65306 \cf0 \strokec5 $\{query\}\cf10 \strokec10 `\cf0 \strokec5 );\cb1 \
+\
+\cb3             \cf9 \strokec9 // UI Success/Error State\cf0 \cb1 \strokec5 \
+\cb3             assistantButton.disabled = \cf13 \strokec13 false\cf0 \strokec5 ;\cb1 \
+\cb3             assistantButtonText.textContent = \cf10 \strokec10 '\uc0\u21462 \u24471 \u25351 \u24341  \u10024 '\cf0 \strokec5 ;\cb1 \
+\cb3             assistantLoading.classList.add(\cf10 \strokec10 'hidden'\cf0 \strokec5 );\cb1 \
+\cb3             \cb1 \
+\cb3             assistantResult.textContent = recommendationText;\cb1 \
+\cb3             assistantOutput.classList.remove(\cf10 \strokec10 'hidden'\cf0 \strokec5 );\cb1 \
+\cb3             \cb1 \
+\cb3             \cf9 \strokec9 // Scroll to show the result\cf0 \cb1 \strokec5 \
+\cb3             assistantOutput.scrollIntoView(\{ behavior: \cf10 \strokec10 'smooth'\cf0 \strokec5 , block: \cf10 \strokec10 'start'\cf0 \strokec5  \});\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\cb3         \cf9 \strokec9 // --- Core Functions (Existing) ---\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Generates the HTML card for a single service item.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{Object\} service - The service object.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 function\cf0 \strokec5  createServiceCard(service) \{\cb1 \
+\cb3             \cf13 \strokec13 return\cf0 \strokec5  \cf10 \strokec10 `\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="bg-white p-4 rounded-xl shadow-lg border-l-4 border-milk-tea transition transform hover:scale-[1.02] duration-300 flex flex-col">\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <!-- Image Area -->\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <img src="\cf0 \strokec5 $\{service.image_url\}\cf10 \strokec10 " alt="\cf0 \strokec5 $\{service.name\}\cf10 \strokec10 " \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                          class="w-full h-32 object-contain rounded-lg mb-3 p-1 bg-oatmeal" \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                          onerror="this.onerror=null;this.src='https://via.placeholder.com/400x128/cccccc/808080?text=\uc0\u22294 \u29255 \u36617 \u20837 \u22833 \u25943 \u65292 \u35531 \u25552 \u20379 \u30452 \u25509 \u22294 \u29255 \u32178 \u22336 ';" />\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <!-- Content -->\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="flex-grow">\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <div class="flex justify-between items-start mb-2">\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <h3 class="text-lg font-bold text-deep-brown">\cf0 \strokec5 $\{service.code\}\cf10 \strokec10  \cf0 \strokec5 $\{service.name\}\cf10 \strokec10 </h3>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <span class="text-xl font-extrabold text-milk-tea flex-shrink-0 ml-2">NT\cf16 \strokec16 $\cf0 \strokec5 $\{service.price\}\cf10 \strokec10 </span>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         </div>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <p class="text-sm text-gray-500 line-clamp-2">\cf0 \strokec5 $\{service.short_detail\}\cf10 \strokec10 </p>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </div>\cf0 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10                     <!-- Detail Button -->\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <button onclick="openModal('\cf0 \strokec5 $\{service.id\}\cf10 \strokec10 ')" class="mt-3 w-full bg-light-pink text-deep-brown py-2 rounded-lg font-semibold text-sm hover:bg-milk-tea hover:text-white transition-colors">\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \uc0\u26597 \u30475 \u35443 \u24773 \cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </button>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             `\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Generates the HTML card for a discount item.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{Object\} discount - The discount object.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 function\cf0 \strokec5  createDiscountCard(discount) \{\cb1 \
+\cb3             \cf13 \strokec13 return\cf0 \strokec5  \cf10 \strokec10 `\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="bg-light-pink p-4 rounded-xl shadow-lg border-l-4 border-milk-tea transition transform hover:scale-[1.02] duration-300">\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="flex items-start">\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <span class="text-2xl mr-3 flex-shrink-0">\cf0 \strokec5 $\{discount.icon\}\cf10 \strokec10 </span>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <p class="text-base font-medium text-deep-brown">\cf0 \strokec5 $\{discount.text\}\cf10 \strokec10 </p>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </div>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf0 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             `\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Renders services or discounts based on the selected category.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{string\} category - 'tarot', 'ritual', or 'discount'.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 function\cf0 \strokec5  renderContent(category) \{\cb1 \
+\cb3             serviceListContainer.innerHTML = \cf10 \strokec10 ''\cf0 \strokec5 ;\cb1 \
+\cb3             \cf13 \strokec13 let\cf0 \strokec5  contentHTML = \cf10 \strokec10 ''\cf0 \strokec5 ;\cb1 \
+\
+\cb3             \cf13 \strokec13 if\cf0 \strokec5  (category === \cf10 \strokec10 'discount'\cf0 \strokec5 ) \{\cb1 \
+\cb3                 discounts.forEach(discount => \{\cb1 \
+\cb3                     contentHTML += createDiscountCard(discount);\cb1 \
+\cb3                 \});\cb1 \
+\cb3             \} \cf13 \strokec13 else\cf0 \strokec5  \{\cb1 \
+\cb3                 \cf13 \strokec13 const\cf0 \strokec5  filteredServices = services.filter(service => service.category === category);\cb1 \
+\cb3                 filteredServices.forEach(service => \{\cb1 \
+\cb3                     contentHTML += createServiceCard(service);\cb1 \
+\cb3                 \});\cb1 \
+\cb3             \}\cb1 \
+\cb3             \cb1 \
+\cb3             \cf13 \strokec13 if\cf0 \strokec5  (contentHTML === \cf10 \strokec10 ''\cf0 \strokec5 ) \{\cb1 \
+\cb3                 contentHTML = \cf10 \strokec10 `<p class="text-center text-gray-500 p-8 bg-white rounded-xl">\uc0\u27492 \u20998 \u39006 \u26283 \u28961 \u38917 \u30446 \u12290 </p>`\cf0 \strokec5 ;\cb1 \
+\cb3             \}\cb1 \
+\
+\cb3             serviceListContainer.innerHTML = contentHTML;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Handles navigation switching.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{string\} targetId - The ID of the section to show.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{Event\} event - The click event.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 function\cf0 \strokec5  showPage(targetId, event) \{\cb1 \
+\cb3             \cf13 \strokec13 if\cf0 \strokec5  (event) event.preventDefault();\cb1 \
+\cb3             \cb1 \
+\cb3             \cf9 \strokec9 // Hide all pages\cf0 \cb1 \strokec5 \
+\cb3             document.querySelectorAll(\cf10 \strokec10 '.page'\cf0 \strokec5 ).forEach(page => \{\cb1 \
+\cb3                 page.classList.add(\cf10 \strokec10 'hidden'\cf0 \strokec5 );\cb1 \
+\cb3             \});\cb1 \
+\
+\cb3             \cf9 \strokec9 // Show target page\cf0 \cb1 \strokec5 \
+\cb3             document.getElementById(targetId).classList.remove(\cf10 \strokec10 'hidden'\cf0 \strokec5 );\cb1 \
+\
+\cb3             \cf9 \strokec9 // Update active navigation item\cf0 \cb1 \strokec5 \
+\cb3             document.querySelectorAll(\cf10 \strokec10 '.nav-item'\cf0 \strokec5 ).forEach(item => \{\cb1 \
+\cb3                 item.classList.remove(\cf10 \strokec10 'active'\cf0 \strokec5 );\cb1 \
+\cb3                 \cf13 \strokec13 if\cf0 \strokec5  (item.getAttribute(\cf10 \strokec10 'onclick'\cf0 \strokec5 ).includes(\cf10 \strokec10 `'\cf0 \strokec5 $\{targetId\}\cf10 \strokec10 '`\cf0 \strokec5 )) \{\cb1 \
+\cb3                     item.classList.add(\cf10 \strokec10 'active'\cf0 \strokec5 );\cb1 \
+\cb3                 \}\cb1 \
+\cb3             \});\cb1 \
+\
+\cb3             \cf9 \strokec9 // For pricelist, ensure the correct category is rendered\cf0 \cb1 \strokec5 \
+\cb3             \cf13 \strokec13 if\cf0 \strokec5  (targetId === \cf10 \strokec10 'pricelist'\cf0 \strokec5 ) \{\cb1 \
+\cb3                  \cf9 \strokec9 // Re-render based on the active category button, default to 'tarot'\cf0 \cb1 \strokec5 \
+\cb3                 \cf13 \strokec13 const\cf0 \strokec5  activeBtn = document.querySelector(\cf10 \strokec10 '.category-btn.bg-milk-tea'\cf0 \strokec5 );\cb1 \
+\cb3                 \cf13 \strokec13 const\cf0 \strokec5  defaultCategory = activeBtn ? activeBtn.dataset.category : \cf10 \strokec10 'tarot'\cf0 \strokec5 ;\cb1 \
+\cb3                 renderContent(defaultCategory);\cb1 \
+\cb3             \}\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Handles category button clicks.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{Event\} e - The click event.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 function\cf0 \strokec5  handleCategoryClick(e) \{\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  selectedCategory = e.target.dataset.category;\cb1 \
+\cb3             \cb1 \
+\cb3             \cf9 \strokec9 // Update button styles\cf0 \cb1 \strokec5 \
+\cb3             categoryButtons.forEach(btn => \{\cb1 \
+\cb3                 btn.classList.remove(\cf10 \strokec10 'bg-milk-tea'\cf0 \strokec5 , \cf10 \strokec10 'text-white'\cf0 \strokec5 , \cf10 \strokec10 'border-milk-tea'\cf0 \strokec5 );\cb1 \
+\cb3                 btn.classList.add(\cf10 \strokec10 'bg-white'\cf0 \strokec5 , \cf10 \strokec10 'text-deep-brown'\cf0 \strokec5 , \cf10 \strokec10 'border'\cf0 \strokec5 , \cf10 \strokec10 'border-milk-tea'\cf0 \strokec5 , \cf10 \strokec10 'hover:bg-light-pink'\cf0 \strokec5 );\cb1 \
+\cb3             \});\cb1 \
+\
+\cb3             e.target.classList.add(\cf10 \strokec10 'bg-milk-tea'\cf0 \strokec5 , \cf10 \strokec10 'text-white'\cf0 \strokec5 );\cb1 \
+\cb3             e.target.classList.remove(\cf10 \strokec10 'bg-white'\cf0 \strokec5 , \cf10 \strokec10 'text-deep-brown'\cf0 \strokec5 , \cf10 \strokec10 'border'\cf0 \strokec5 , \cf10 \strokec10 'border-milk-tea'\cf0 \strokec5 , \cf10 \strokec10 'hover:bg-light-pink'\cf0 \strokec5 );\cb1 \
+\
+\cb3             renderContent(selectedCategory);\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Opens the detail modal for a specific service.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{string\} serviceId - The ID of the service to display.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 function\cf0 \strokec5  openModal(serviceId) \{\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  service = services.find(s => s.id === serviceId);\cb1 \
+\cb3             \cf13 \strokec13 if\cf0 \strokec5  (!service) \cf13 \strokec13 return\cf0 \strokec5 ;\cb1 \
+\
+\cb3             document.getElementById(\cf10 \strokec10 'modal-image'\cf0 \strokec5 ).src = service.image_url;\cb1 \
+\cb3             document.getElementById(\cf10 \strokec10 'modal-name'\cf0 \strokec5 ).textContent = \cf10 \strokec10 `\cf0 \strokec5 $\{service.code\}\cf10 \strokec10  \cf0 \strokec5 $\{service.name\}\cf10 \strokec10 `\cf0 \strokec5 ;\cb1 \
+\cb3             document.getElementById(\cf10 \strokec10 'modal-price'\cf0 \strokec5 ).textContent = \cf10 \strokec10 `NT\cf16 \strokec16 $\cf0 \strokec5 $\{service.price\}\cf10 \strokec10 `\cf0 \strokec5 ;\cb1 \
+\cb3             document.getElementById(\cf10 \strokec10 'modal-detail'\cf0 \strokec5 ).innerHTML = service.long_detail;\cb1 \
+\cb3             document.getElementById(\cf10 \strokec10 'service-modal'\cf0 \strokec5 ).classList.add(\cf10 \strokec10 'active'\cf0 \strokec5 );\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Closes the detail modal.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 function\cf0 \strokec5  closeModal() \{\cb1 \
+\cb3             document.getElementById(\cf10 \strokec10 'service-modal'\cf0 \strokec5 ).classList.remove(\cf10 \strokec10 'active'\cf0 \strokec5 );\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Copies the address text to the clipboard.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 function\cf0 \strokec5  copyAddress() \{\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  addressText = document.getElementById(\cf10 \strokec10 'address-text'\cf0 \strokec5 ).textContent.trim();\cb1 \
+\cb3             \cf13 \strokec13 const\cf0 \strokec5  tempInput = document.createElement(\cf10 \strokec10 'textarea'\cf0 \strokec5 );\cb1 \
+\cb3             tempInput.value = addressText;\cb1 \
+\cb3             document.body.appendChild(tempInput);\cb1 \
+\cb3             tempInput.select();\cb1 \
+\cb3             \cb1 \
+\cb3             \cf13 \strokec13 try\cf0 \strokec5  \{\cb1 \
+\cb3                 \cf9 \strokec9 // For clipboard operations in an iframe environment, document.execCommand('copy') is more reliable\cf0 \cb1 \strokec5 \
+\cb3                 \cf13 \strokec13 const\cf0 \strokec5  success = document.execCommand(\cf10 \strokec10 'copy'\cf0 \strokec5 );\cb1 \
+\cb3                 \cf13 \strokec13 if\cf0 \strokec5  (success) \{\cb1 \
+\cb3                     showCustomMessage(\cf10 \strokec10 '\uc0\u22320 \u22336 \u24050 \u25104 \u21151 \u35079 \u35069 \u65281 '\cf0 \strokec5 , \cf10 \strokec10 'success'\cf0 \strokec5 );\cb1 \
+\cb3                 \} \cf13 \strokec13 else\cf0 \strokec5  \{\cb1 \
+\cb3                     showCustomMessage(\cf10 \strokec10 '\uc0\u35079 \u35069 \u22833 \u25943 \u65292 \u35531 \u25163 \u21205 \u35079 \u35069 \u12290 '\cf0 \strokec5 , \cf10 \strokec10 'error'\cf0 \strokec5 );\cb1 \
+\cb3                 \}\cb1 \
+\cb3             \} \cf13 \strokec13 catch\cf0 \strokec5  (err) \{\cb1 \
+\cb3                 showCustomMessage(\cf10 \strokec10 '\uc0\u35079 \u35069 \u22833 \u25943 \u65292 \u35531 \u25163 \u21205 \u35079 \u35069 \u12290 '\cf0 \strokec5 , \cf10 \strokec10 'error'\cf0 \strokec5 );\cb1 \
+\cb3             \}\cb1 \
+\cb3             document.body.removeChild(tempInput);\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf9 \strokec9 /**\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * Shows a transient custom message (instead of alert).\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{string\} message - The message to display.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          * @param \{string\} type - 'success' or 'error'.\cf0 \cb1 \strokec5 \
+\cf9 \cb3 \strokec9          */\cf0 \cb1 \strokec5 \
+\cb3         \cf13 \strokec13 function\cf0 \strokec5  showCustomMessage(message, type) \{\cb1 \
+\cb3             \cf13 \strokec13 let\cf0 \strokec5  messageBox = document.getElementById(\cf10 \strokec10 'custom-message'\cf0 \strokec5 );\cb1 \
+\cb3             \cf13 \strokec13 if\cf0 \strokec5  (!messageBox) \{\cb1 \
+\cb3                 messageBox = document.createElement(\cf10 \strokec10 'div'\cf0 \strokec5 );\cb1 \
+\cb3                 messageBox.id = \cf10 \strokec10 'custom-message'\cf0 \strokec5 ;\cb1 \
+\cb3                 messageBox.className = \cf10 \strokec10 'fixed top-4 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-full shadow-lg z-50 text-white transition-opacity duration-300 opacity-0'\cf0 \strokec5 ;\cb1 \
+\cb3                 document.getElementById(\cf10 \strokec10 'app-container'\cf0 \strokec5 ).appendChild(messageBox);\cb1 \
+\cb3             \}\cb1 \
+\
+\cb3             messageBox.textContent = message;\cb1 \
+\cb3             messageBox.className = messageBox.className.split(\cf10 \strokec10 ' '\cf0 \strokec5 ).filter(c => !c.startsWith(\cf10 \strokec10 'bg-'\cf0 \strokec5 )).join(\cf10 \strokec10 ' '\cf0 \strokec5 );\cb1 \
+\cb3             \cb1 \
+\cb3             \cf13 \strokec13 if\cf0 \strokec5  (type === \cf10 \strokec10 'success'\cf0 \strokec5 ) \{\cb1 \
+\cb3                 messageBox.classList.add(\cf10 \strokec10 'bg-milk-tea'\cf0 \strokec5 );\cb1 \
+\cb3             \} \cf13 \strokec13 else\cf0 \strokec5  \cf13 \strokec13 if\cf0 \strokec5  (type === \cf10 \strokec10 'error'\cf0 \strokec5 ) \{\cb1 \
+\cb3                 messageBox.classList.add(\cf10 \strokec10 'bg-red-500'\cf0 \strokec5 );\cb1 \
+\cb3             \}\cb1 \
+\
+\cb3             \cf9 \strokec9 // Show and then hide\cf0 \cb1 \strokec5 \
+\cb3             messageBox.classList.remove(\cf10 \strokec10 'opacity-0'\cf0 \strokec5 );\cb1 \
+\cb3             messageBox.classList.add(\cf10 \strokec10 'opacity-100'\cf0 \strokec5 );\cb1 \
+\
+\cb3             setTimeout(() => \{\cb1 \
+\cb3                 messageBox.classList.remove(\cf10 \strokec10 'opacity-100'\cf0 \strokec5 );\cb1 \
+\cb3                 messageBox.classList.add(\cf10 \strokec10 'opacity-0'\cf0 \strokec5 );\cb1 \
+\cb3             \}, \cf15 \strokec15 3000\cf0 \strokec5 );\cb1 \
+\cb3         \}\cb1 \
+\
+\
+\cb3         \cf9 \strokec9 // --- Initialization on Load ---\cf0 \cb1 \strokec5 \
+\cb3         document.addEventListener(\cf10 \strokec10 'DOMContentLoaded'\cf0 \strokec5 , () => \{\cb1 \
+\cb3             \cf9 \strokec9 // 1. Initial Page Load: Show Pricelist\cf0 \cb1 \strokec5 \
+\cb3             showPage(\cf10 \strokec10 'pricelist'\cf0 \strokec5 );\cb1 \
+\cb3             \cb1 \
+\cb3             \cf9 \strokec9 // 2. Set up Category Filters\cf0 \cb1 \strokec5 \
+\cb3             categoryButtons.forEach(button => \{\cb1 \
+\cb3                 button.addEventListener(\cf10 \strokec10 'click'\cf0 \strokec5 , handleCategoryClick);\cb1 \
+\cb3             \});\cb1 \
+\cb3             \cb1 \
+\cb3             \cf9 \strokec9 // 3. Initial rendering of the 'tarot' category\cf0 \cb1 \strokec5 \
+\cb3             renderContent(\cf10 \strokec10 'tarot'\cf0 \strokec5 );\cb1 \
+\cb3         \});\cb1 \
+\
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 body\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 html\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+}
